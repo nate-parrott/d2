@@ -1,22 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Merriweather';
-/*@import 'https://fonts.googleapis.com/css?family=Catamaran:300,400,500,700';
-*/
-
-@import 'https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i';
-
 
 body {
-	font-family: "Lato", sans-serif;
-/*	font-family: "Catamaran", sans-serif;
-*/	line-height: 1.8;
+	line-height: 1.8;
 	color: #222;
-	font-size: large;
+	font-size: 1.1em;
+	margin: 0;
 }
-
-/*h1, h2 {
-	font-family: 'Merriweather', 'Georgia', serif;
-	font-weight: normal;
-}*/
 
 h1 {
 	font-size: 3em;
@@ -34,47 +22,45 @@ figcaption {
 	color: gray;
 }
 
-#content p, #content hr, #content h1, #content h2, #content figcaption, #content ul, #content blockquote, #content img, #content figure > img {
+.content p, .content hr, .content h1, .content h2, .content figcaption, .content ul, .content blockquote, .content img, .content figure > img, .content .in-column {
 	width: 90%;
 	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 20px auto;
 	display: block;
 }
 
-/*#content > img, #content > figure, hr {
-	margin-top: 2em;
-	margin-bottom: 2em;
-}*/
+section:not(.backgrounded) {
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
 
-/*p, h1, h2, #content > img, figcaption {
-	margin-top: 2em;
-	margin-bottom: 2em;
-}*/
+section.backgrounded {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
 
-#content > img.wide, #content > figure > img.wide {
+.content section > img.wide, .content section > figure > img.wide {
 	max-width: 900px;
 }
 
 
-#content > img.x-wide, #content > figure > img.x-wide {
+.content section > img.x-wide, .content section > figure > img.x-wide {
 	max-width: 1100px;
 }
 
-#content > img.full, #content > figure > img.full {
+.content section > img.full, .content section > figure > img.full {
 	width: 100%;
 }
 
-#content hr {
+.content hr {
 	max-width: 600px;
 	opacity: 0.4;
-	margin-top: 2em;
-	margin-bottom: 2em;
+/*	margin-top: 2em;
+	margin-bottom: 2em;*/
 }
 
 blockquote {
 	text-align: center;
-	font-family: 'Merriweather', 'Georgia', serif;
 /*	font-style: italic; */
 	opacity: 0.5;
 }
@@ -128,26 +114,26 @@ blockquote:after {
 	}
 }
 
-#content .captioned-animation {
+.content .captioned-animation {
 /*	background-color: #f5f5f5;
 */	margin-top: 1em;
 	margin-bottom: 1em;
 	text-align: center;
 }
 
-#content .captioned-animation > * {
+.content .captioned-animation > * {
 	display: inline-block;
 	vertical-align: middle;
 	width: 40%;
 	margin: 0;
 }
 
-#content .captioned-animation p {
+.content .captioned-animation p {
 	text-align: left;
 	padding-left: 1em;
 }
 
-#content .captioned-animation img {
+.content .captioned-animation img {
 	max-width: 25vh;
 	border-radius: 4px;
 }
