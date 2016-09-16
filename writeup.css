@@ -22,7 +22,7 @@ figcaption {
 	color: gray;
 }
 
-.content p, .content hr, .content h1, .content h2, .content figcaption, .content ul, .content blockquote, .content img, .content figure > img, .content .in-column {
+.content p, .content hr, .content h1, .content h2, .content figcaption, .content ul, .content ol, .content blockquote, .content img, .content figure > img, .content .in-column, .content .two-pane {
 	width: 90%;
 	max-width: 800px;
 	margin: 20px auto;
@@ -89,17 +89,18 @@ blockquote:after {
 
 @media screen and (min-width: 700px) {
 	.two-pane {
-		display: table;
-		max-width: 1300px;
+		display: table !important;
+		max-width: 1300px !important;
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
 	.two-pane > div {
-		width: 50%;
+		width: 40%;
 		padding-right: 5px;
 		padding-left: 5px;
 		display: table-cell;
 		vertical-align: middle;
+		box-sizing: border-box;
 	}
 
 	.two-pane > div:first-child {
@@ -110,8 +111,19 @@ blockquote:after {
 		display: inline !important;
 	}
 	
-	.two-pane > div:last-child p {
+/*	.two-pane > div:last-child p {
 		margin-left: 0 !important;
+	}*/
+	
+	.centered-blocks {
+		text-align: center;
+	}
+	
+	.content .centered-blocks > * {
+		display: inline-block;
+		margin: 10px;
+		vertical-align: middle;
+		max-width: 40%;
 	}
 }
 
@@ -140,10 +152,13 @@ blockquote:after {
 }
 
 .cta {
-	background-color: #0ca5b0;
 	padding: 3px 10px;
 	color: white;
 	display: inline-block;
 	text-decoration: none;
+}
+
+.light-shadow {
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
 }
 
