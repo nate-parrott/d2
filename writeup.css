@@ -50,6 +50,7 @@ section.backgrounded {
 
 .content section > img.full, .content section > figure > img.full {
 	width: 100%;
+	max-width: 100%;
 }
 
 .content hr {
