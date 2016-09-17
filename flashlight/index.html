@@ -3,11 +3,15 @@
 <head>
 	<title>Flashlight – designing a natural-language interface</title>
 	<link rel='stylesheet' href='../writeup.css'/>
-	<link rel='stylesheet' href='flashlight.css'/>
 	<meta charset='utf-8'/>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='/portfolio.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-	<div class='content' id='flashlight'>
+	<!--OPEN-->
+	<div class='content' id='flashlight' data-portfolio-segment='/flashlight/index.html'>
+		<link rel='stylesheet' href='/flashlight/flashlight.css'/>
 		<!-- 
 		Tilted spotlight window with contact shadow
 			vs.
@@ -33,7 +37,7 @@
 		-->
 		
 		<section class='main backgrounded'>
-			<img src='fl.png' style='max-width: 500px'/>
+			<img src='/flashlight/fl.png' style='max-width: 500px'/>
 			<h1>Flashlight: Designing a Natural-Language Interface to OS X</h1>
 		</section>
 		
@@ -48,7 +52,7 @@
 			<p>
 				I built Flashlight because I saw the potential of natural-language widgets to perform simple tasks incredibly quickly – tasks like creating calendar events, setting reminders, placing phone calls or generating lorem-ipsum text. I chose to integrate these into Spotlight, OS X's native search feature, because it's easy to access, and is already used by millions of people:
 			</p>
-			<img src='typical_plugin_breakdown.png' class='wide'/>
+			<img src='/flashlight/typical_plugin_breakdown.png' class='wide'/>
 		</section>
 		
 		<section>
@@ -61,11 +65,11 @@
 				<div class='in-column'>
 					<div class='cards-table'>
 						<div>
-							<img class='icon' src='alfred_icon.png'/>
+							<img class='icon' src='/flashlight/alfred_icon.png'/>
 							<p><strong>Alfred</strong> is a standalone shortcut utility and application launcher that focuses on end-user customizability. I saw Flashlight as a more <strong>mass-market alternative</strong> to Alfred – it'd integrate more seamlessly into the system, and would focus more on out-of-the-box functionality, rather than customization.</p>
 						</div>
 						<div>
-							<img class='icon' src='google_icon.png'/>
+							<img class='icon' src='/flashlight/google_icon.png'/>
 							<p>I actually saw Flashlight as a competitor to <strong>Google Search</strong> – Google understands many of the same natural-language queries as Flashlight in areas like weather and reminders, but Flashlight, as a native app installed on a Mac, had a potential to offer much better integration with users' digital lives.</p>
 						</div>
 					</div>
@@ -74,7 +78,7 @@
 		</section>
 		
 		<section>
-			<img src='programs.png' class='full'/>
+			<img src='/flashlight/programs.png' class='full'/>
 		</section>
 		
 		<section>
@@ -88,7 +92,7 @@
 			<blockquote class='spotlight'>gi rubber ducks</blockquote>
 			<blockquote class='spotlight'>sms chen: what's up?</blockquote>
 			<p>Users' feedback about preferring concise shortcuts to more natural language strongly influenced the design of Flashlight in the future. Since less-natural commands are less discoverable, I redesigned the plugin catalog to <strong>emphasize example command usage:</strong></p>
-			<img src='plugin_examples_evolution.png'/>
+			<img src='/flashlight/plugin_examples_evolution.png'/>
 		</section>
 		
 		<section>
@@ -101,22 +105,22 @@
 				<div class='in-column'>
 					<div class='cards-table'>
 						<div>
-							<img src='ideaboard.png'/>
+							<img src='/flashlight/ideaboard.png'/>
 							<p><strong>Ideaboard</strong> – a page for users to propose and upvote new functionality with as little effort as possible.</p>
 						</div>
 				
 						<div>
-							<img src='feedback.png'/>
+							<img src='/flashlight/feedback.png'/>
 							<p><strong>Feedback page</strong> – linked from the About box, collecting comments from any user.</p>
 						</div>
 				
 						<div>
-							<img src='download_counts.png'/>
+							<img src='/flashlight/download_counts.png'/>
 							<p><strong>Download count tracking</strong> helped me learn which plugins were most attractive to users, and deserved the most attention.</p>
 						</div>
 				
 						<div>
-							<img src='github.png'/>
+							<img src='/flashlight/github.png'/>
 							<p><strong>GitHub issues</strong> – collecting more technical feedback from more technical and involved users.</p>
 						</div>
 					</div>
@@ -133,22 +137,22 @@
 			</p>
 			
 			<figure>
-				<img src='early_website.png'/>
+				<img src='/flashlight/early_website.png'/>
 				<figcaption>The first Flashlight website – to a user who isn't sure what "plugins" or "Spotlight" are, it's pretty unclear what the product does.</figcaption>
 			</figure>
 			
 			<figure>
-				<img src='middle_website.png'/>
+				<img src='/flashlight/middle_website.png'/>
 				<figcaption>A second iteration of the website – a little more descriptive, but not very visually explanatory.</figcaption>
 			</figure>
 			
 			<figure>
-				<img src='last_website.png'/>
+				<img src='/flashlight/last_website.png'/>
 				<figcaption>The latest website focused on visually demonstrating what Flashlight does. It also included publicly-browseable pages for all plugins, so individual plugins could be linked to directly.</figcaption>
 			</figure>
 			
 			<figure>
-				<img src='animation-loop.gif' style='max-width: 400px'/>
+				<img src='/flashlight/animation-loop.gif' style='max-width: 400px'/>
 				<figcaption style='max-width: 450px'>On the latest website, an animation cycles through some of the top plugins, demonstrating various features.</figcaption>
 			</figure>
 		</section>
@@ -156,8 +160,9 @@
 		<section>
 			<h2>Outcome</h2>
 			<p>Flashlight was an incredible learning experience – it got hundreds of thousands of downloads, and I heard from hundreds of users whose lives were made more productive by Flashlight. It got press accolades, and even got noticed by Apple. I started as an intern on the Spotlight team in May 2015 – the same day an OS X update inadvertently made Flashlight stop working. Today, Spotlight can actually do a lot of what Flashlight could (though I didn't work on these features directly – they certainly aren't "copied from Flashlight" as some people assume).</p>
-			<img src='press_cascade.png' class='full'/>
+			<img src='/flashlight/press_cascade.png' class='full'/>
 		</section>
 	</div>
+	<!--CLOSE-->
 </body>
 </html>

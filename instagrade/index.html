@@ -3,14 +3,18 @@
 <head>
 	<title>Evolving InstaGrade</title>
 	<link rel='stylesheet' href='../writeup.css'/>
-	<link rel='stylesheet' href='ig.css'/>
 	<meta charset='utf-8'/>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script src='/portfolio.js'></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
-	<div id='instagrade' class='content'>
+	<!--OPEN-->
+	<div id='instagrade' class='content' data-portfolio-segment='/instagrade/index.html'>
+		<link rel='stylesheet' href='/instagrade/ig.css'/>
 		<!-- http://instagradeformbuilder.appspot.com/UqqgFIhqV-oXwAciWJkpOm65WQiRWGgPwOGqqfv2gtVBojRY98xhI18Kl_xaHR5d0veZJdpMcpZ0-zNci5HJzmwetQzltkpzjZxd4pB6hw4= -->
 		<section>
-			<img src='product.png' class='wide'/>
+			<img src='/instagrade/product.png' class='wide'/>
 			<h1>Evolving InstaGrade</h1>
 		</section>
 		<section>
@@ -27,7 +31,7 @@
 		<section>
 			<h2>InstaGrade, pre-redesign</h2>
 			<figure>
-				<img src='old.png'/>
+				<img src='/instagrade/old.png'/>
 				<figcaption>InstaGrade in 2013 – I visually revamped the app for the iOS 7 launch, but the overall layout and user experience stayed the same.</figcaption>
 			</figure>
 			<p>InstaGrade v1 was a standalone app – there were two answer sheets (a 24 and a 56-question version) that teachers could print out. Answers would appear inside the app, and grade reports could be exported as a PDF.</p>
@@ -51,12 +55,12 @@
 			<p>I figured that teachers wouldn't want to type quiz questions into their phones, so I settled on an online quiz builder. This took InstaGrade from a standalone iPhone app to a cross-platform, account-based online service. <strong>This complicated the user flow significantly–a downside I hoped would be justified by the increased functionality</strong>.<p>
 				
 			<figure>
-				<img src='user_flow.png' class='wide'/>
+				<img src='/instagrade/user_flow.png' class='wide'/>
 				<figcaption>User flow for InstaGrade v1 and v2 – v2 allows quizzes to be created on a computer, at the cost of increased complexity.</figcaption>
 			</figure>
 			
 			<figure>
-						<img src='builder.png' class='wide'/>
+						<img src='/instagrade/builder.png' class='wide'/>
 						<figcaption>The what-you-see-is-what-you-get quiz builder.</figcaption>
 					</figure>
 		</section>
@@ -88,7 +92,7 @@
 					</li>
 				</ul>
 			</p>
-			<img src='scan_screen_comparison.png' class='x-wide'/>
+			<img src='/instagrade/scan_screen_comparison.png' class='x-wide'/>
 		</section>
 		<!-- <img src='anim.gif' class='float'/>
 		<p>A downside of the new scanning interface was that <strong>it isn't immediately apparent how to view scan results.</strong> I used animation to show graded quizzes "flying" into the button users press to view scan results.</p> -->
@@ -103,7 +107,7 @@
 		<section>
 			<hr/>
 			<div class='captioned-animation'>
-				<img src='anim.gif'/>
+				<img src='/instagrade/anim.gif'/>
 				<p>A downside of the new scanning interface was that <strong>it isn't immediately apparent how to view previously scanned quizzes.</strong> It helps that there's only one button – still, I used an animation as an affordance to show users where their graded quizzes could be found.</p>
 			</div>
 		
@@ -119,7 +123,7 @@
 				</figcaption>
 			</figure> -->
 			<figure>
-				<img src='brand.png'/>
+				<img src='/instagrade/brand.png'/>
 			</figure>
 			<p>
 					I didn't begin the InstaGrade project with a consistent brand in mind. As I iterated on the visual style pre-v2, a brand identity developed slowly – for the redesign, I codified it, picking a single accent color and a pair of typefaces. I tried to compelement these with simple illustrated graphics, and while they aren't the most aesthetically pleasing, they still play an important role breaking up the monotony of text in places like the onboarding flow.
@@ -142,5 +146,6 @@
 		<!-- user education -->
 		<!-- DATA VISUALIZATION FOR QUIZ RESULTS ("your quiz, example") -->
 	</div>
+	<!--CLOSE-->
 </body>
 </html>
