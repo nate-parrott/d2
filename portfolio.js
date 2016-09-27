@@ -1,4 +1,4 @@
-var articles = ['/instagrade/index.html', '/flashlight/index.html', '/hab/index.html'];
+var articles = ['/instagrade/index.html', '/flashlight/index.html', '/hab/index.html', '/stacks/index.html'];
 
 $(document).ready(function() {
 	var loadState = 'none'; // none / loading / pause / nomore

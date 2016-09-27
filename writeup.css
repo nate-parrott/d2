@@ -22,7 +22,7 @@ figcaption {
 	color: gray;
 }
 
-.content p, .content hr, .content h1, .content h2, .content figcaption, .content ul, .content ol, .content blockquote, .content img, .content figure > img, .content .in-column, .content .two-pane {
+.content p, .content hr, .content h1, .content h2, .content figcaption, .content ul, .content ol, .content blockquote, .content img, .content figure > img, .content .in-column, .content .two-pane, .content .images {
 	width: 90%;
 	max-width: 800px;
 	margin: 20px auto;
@@ -41,6 +41,18 @@ section.backgrounded {
 
 .content section > img.wide, .content section > figure > img.wide {
 	max-width: 900px;
+}
+
+.content .three.images {
+	max-width: 900px;
+	text-align: center;
+}
+
+.content .three.images img {
+	width: 31%;
+	margin-right: 0.5%;
+	margin-left: 0.5%;
+	display: inline-block;
 }
 
 
