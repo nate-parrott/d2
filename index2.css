@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i';
+
+body {
+	color: white;
+	background-color: #2D2D2D;
+	font-family: "Open Sans", sans-serif;
+}
+
+a {
+	color: inherit;
+/*	text-decoration: none;
+	border-bottom: 2px solid rgba(255,255,255,0.5);*/
+}
+
+.links a, .text-list a {
+	border-bottom: 2px solid rgba(255,255,255,0.5);
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+section {
+	margin: 3em auto;
+	width: 90%;
+}
+
+section.normal {
+	max-width: 800px;
+}
+
+section.skinny {
+	width: 80%;
+	max-width: 600px;
+}
+
+section.twopane {
+	display: table;
+}
+
+section.twopane > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.grid {
+	text-align: center;
+}
+
+.grid > div {
+	text-align: left;
+}
+
+section.x-skinny {
+	width: 80%;
+	max-width: 500px;
+	text-align: center;
+	opacity: 0.5;
+}
+
+h3 {
+	text-transform: uppercase;
+	display: inline-block;
+	transform: translate(-50%, 0px) skewY(-15deg);
+}
+
+@media screen and (min-width: 600px) {
+	.grid > div {
+		vertical-align: top;
+		display: inline-block;
+		width: 45%;
+	}
+	.grid > div:nth-child(odd) {
+		margin-right: 10%;
+	}
+}
+
+.grid img {
+	max-width: 100%;
+}
+
+#name {
+	margin-top: -3vw;
+}
+
+#name img {
+	width: 80vw;
+}
+
+#bio img {
+	width: 10vw;
+}
+
+#bio > div:last-child {
+	padding-left: 10px;
+	padding-bottom: 1.5em;
+	opacity: 0.8;
+}
+
+#portfolio img {
+	box-shadow: 0px 3px 2px rgba(0,0,0,0.6);
+}
+
+#portfolio h4, #portfolio p {
+	margin: 0;
+	opacity: 0.5;
+	font-size: small;
+}
+
+#portfolio h4 {
+	text-transform: uppercase;
+	margin-top: 0.5em;
+}
+
+#portfolio p {
+	margin-bottom: 2em;
+}
+
+#apps > div {
+	display: inline-block;
+	margin-right: 1em;
+	text-align: center;
+}
+
+#apps a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#apps p {
+	font-size: small;
+	margin: 0.5em;
+	opacity: 0.5;
+}
+
+#apps img {
+	width: 110px;
+}
+
+.text-list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.text-list p {
+	opacity: 0.5;
+}
+
+#contact .fa {
+	display: inline-block;
+	font-size: 40px;
+	margin-right: 0.5em;
+}
