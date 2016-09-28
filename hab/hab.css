@@ -14,9 +14,14 @@
 
 #hab .large {
 	font-weight: lighter;
-	font-size: 2em;
 	text-align: center;
 	line-height: 1.4;
+}
+
+@media screen and (min-width: 600px) {
+	#hab .large {
+		font-size: 2em;
+	}
 }
 
 #hab .cta {

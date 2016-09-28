@@ -7,6 +7,12 @@
 
 #instagrade blockquote {
 	font-family: 'Merriweather', 'Georgia', serif;
+	font-size: small;
+}
+@media screen and (min-width: 650px) {
+	#instagrade blockquote {
+		font-size: 1em;
+	}
 }
 #instagrade .cta {
 	background-color: #0ca5b0;
