@@ -40,12 +40,14 @@ $(document).ready(function() {
 		var currentlyLoaded = $('[data-portfolio-segment]').toArray().map(function(el) {
 			return el.getAttribute('data-portfolio-segment');
 		});
+		var unloaded = [];
 		for (var i=0; i<articles.length; i++) {
 			if (currentlyLoaded.indexOf(articles[i]) == -1) {
-				return articles[i];
+				unloaded.push(articles[i]);
 			}
 		}
-		return null;
+		if (unloaded.length == 0) { return null }
+		return unloaded[Math.round(Math.random() * unloaded.length)]
 	}
 
 	var loadContent = function(url, selector, callback) {
