@@ -134,12 +134,31 @@ h3 {
 	transition: opacity 0.3s cubic-bezier(.12,.02,.38,1);
 }
 
+.pop:after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(/images/shine.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: opacity 0.3s cubic-bezier(.12,.02,.38,1);
+	z-index: 10;
+}
+
 .pop:hover {
 	transform: scale(1.07);
 	z-index: 10;
 }
 
 .pop:hover:before {
+	opacity: 0.5;
+}
+
+.pop:hover:after {
 	opacity: 0.5;
 }
 
