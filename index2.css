@@ -1,10 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i';
 
 body {
-	color: white;
-	background-color: #131313;
-	font-family: "Open Sans", sans-serif;
+	color: #333;
+/*	background-color: #EFF2F6;
+*/	font-family: "Open Sans", sans-serif;
 	margin-top: 0;
+	background-image: url(/images/bg1.png);
+	background-size: 100%;
 }
 
 a {
@@ -14,7 +16,7 @@ a {
 }
 
 .links a, .text-list a {
-	border-bottom: 2px solid rgba(255,255,255,0.5);
+	border-bottom: 2px solid rgba(65, 135, 250, 0.5);
 	text-decoration: none;
 }
 
@@ -68,8 +70,6 @@ section.x-skinny {
 
 h3 {
 	text-transform: uppercase;
-	display: inline-block;
-	transform: translate(-4vw, 0px) skewY(-15deg);
 }
 
 /*@media screen and (max-width: 600px) {
@@ -82,10 +82,10 @@ h3 {
 	.grid > div {
 		vertical-align: top;
 		display: inline-block;
-		width: 45%;
+		width: 47%;
 	}
 	.grid > div:nth-child(odd) {
-		margin-right: 10%;
+		margin-right: 5%;
 	}
 }
 
@@ -98,14 +98,9 @@ h3 {
 }
 
 #name img {
-	width: 80vw;
-}
-
-@media screen and (min-width: 600px) {
-	#name img {
-		margin-top: -3vw;
-		
-	}
+	width: 70vw;
+	max-width: 400px;
+	margin-top: 2em;
 }
 
 #bio img {
@@ -119,7 +114,7 @@ h3 {
 }
 
 #portfolio img {
-	box-shadow: 0px 3px 2px rgba(0,0,0,0.6);
+	box-shadow: 0px 5px 12px rgba(0,0,0,0.35);
 /*	-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
 		filter: gray;*/
@@ -127,7 +122,7 @@ h3 {
 
 #portfolio h4, #portfolio p {
 	margin: 0;
-	opacity: 0.5;
+	opacity: 0.7;
 	font-size: small;
 }
 
@@ -142,8 +137,8 @@ h3 {
 
 #apps > div {
 	display: inline-block;
-	margin-right: 1em;
 	text-align: center;
+	margin-right: 0.5em;
 }
 
 #apps a {
@@ -154,11 +149,13 @@ h3 {
 #apps p {
 	font-size: small;
 	margin: 0.5em;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 #apps img {
 	width: 110px;
+	border-radius: 18px;
+	box-shadow: 0px 3px 7px rgba(0,0,0,0.35);
 }
 
 .text-list {
@@ -167,7 +164,7 @@ h3 {
 }
 
 .text-list p {
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 #contact .fa {
