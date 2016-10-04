@@ -33,6 +33,9 @@ section {
 	section {
 		margin: 1.5em auto;
 	}
+	#blurb {
+		font-size: small;
+	}
 }
 
 section.normal {
