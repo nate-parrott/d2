@@ -221,4 +221,9 @@ h3 {
 	display: inline-block;
 	font-size: 40px;
 	margin-right: 0.5em;
+  opacity: 0.66;
+}
+
+#contact .fa:hover {
+  opacity: 1;
 }
