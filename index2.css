@@ -1,13 +1,48 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i';
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 
 body {
 	color: #333;
-/*	background-color: #EFF2F6;
-*/	font-family: "Open Sans", sans-serif;
+	font-family: "Rubik", sans-serif;
 	margin-top: 0;
-	background-image: url(/images/bg1.png);
-	background-size: 100%;
+	background-color: #223;
+	color: #fcc;
+	line-height: 1.3;
 }
+
+/* INTO SECTION */
+
+#hello {
+	background-color: #fcc;
+	color: #223;
+	display: flex;
+	flex-direction: row;
+	min-height: 60vh;
+	align-items: center;
+}
+
+#bitmojiImage {
+	flex-basis: 0;
+	flex-grow: 1;
+	align-self: stretch;
+	margin: 5%;
+	box-sizing: border-box;
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#intro {
+	padding: 20px;
+	flex-basis: 0;
+	flex-grow: 2;
+	text-align: left;
+	font-size: x-large;
+}
+
+#intro > * {
+	max-width: 500px;
+}
+
 
 a {
 	color: inherit;
@@ -20,13 +55,14 @@ a {
 	text-decoration: none;
 }
 
-h1 {
-	text-align: center;
-}
-
-section {
+section:not(.wide) {
 	margin: 3em auto;
 	width: 90%;
+}
+
+section.wide {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 
 @media screen and (max-width: 600px) {
