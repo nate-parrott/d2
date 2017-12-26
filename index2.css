@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500');
 
 body {
 	color: #333;
@@ -10,6 +10,10 @@ body {
 }
 
 /* INTO SECTION */
+
+h1, h2, h3, h4, h5, h6, strong {
+	font-weight: 500;
+}
 
 #hello {
 	background-color: #fcc;
@@ -61,6 +65,10 @@ body {
 	#intro > * {
 		max-width: 500px;
 	}
+}
+
+#intro h1 {
+	font-weight: normal;
 }
 
 
