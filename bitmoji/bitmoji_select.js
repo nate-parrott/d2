@@ -13,7 +13,7 @@ let startBitmojiUpdates = function() {
 	let hourlyBitmojis = [
 		{name: 'lunch_time', criteria: function(date) { return date.getHours() == 12 }},
 		{name: 'dinner_time', criteria: function(date) { return date.getHours() == 18 }},
-		{name: 'saturday_night', criteria: function(date) { return date.getHours() > 8 && matchesWeekdays(date, ['saturday']) } },
+		{name: 'saturday_night', criteria: function(date) { return date.getHours() > 20 && matchesWeekdays(date, ['saturday']) } },
 		{name: 'good_night', criteria: function(date) { return date.getHours() >= 23 }},
 		{name: 'asleep', criteria: function(date) { return date.getHours() <= 6 }},
 		{name: 'morning', criteria: function(date) { return date.getHours() >= 7 && date.getHours() <= 9 }},
