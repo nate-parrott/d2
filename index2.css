@@ -106,20 +106,6 @@ section.normal {
 	max-width: 800px;
 }
 
-section.skinny {
-	width: 80%;
-	max-width: 600px;
-}
-
-section.twopane {
-	display: table;
-}
-
-section.twopane > div {
-	display: table-cell;
-	vertical-align: middle;
-}
-
 .grid {
 	text-align: center;
 }
@@ -128,23 +114,10 @@ section.twopane > div {
 	text-align: left;
 }
 
-section.x-skinny {
-	width: 80%;
-	max-width: 500px;
-	text-align: center;
-	opacity: 0.5;
-}
-
 h3 {
 	text-transform: uppercase;
 }
 
-/*@media screen and (max-width: 600px) {
-	h3 {
-		transform: translate(-20px, 0px) skewY(-15deg);
-	}
-}
-*/
 @media screen and (min-width: 600px) {
 	.grid > div {
 		vertical-align: top;
